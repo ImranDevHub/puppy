@@ -1,1 +1,84 @@
-/*# sourceMappingURL=styles.css.map */
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+}
+
+ul {
+  list-style-type: none;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-size: 1.6rme;
+  font-family: Inter, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+}
+
+p {
+  color: #1f1f1f;
+}
+
+h1,
+h2,
+h3 {
+  color: #fff;
+}
+
+h1,
+h2 {
+  font-size: 4.8rem;
+}
+
+@media screen and (min-width: 960px) {
+  .container {
+    width: 960px;
+    margin: 0 auto;
+  }
+}
+
+.grid {
+  display: grid;
+  gap: 5%;
+}
+@media screen and (min-width: 960px) {
+  .grid--1x3 {
+    grid-template-columns: repeat(3, 1fr);
+  }
+  .grid--1x2 {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+.puppy {
+  margin: 5%;
+}
+.puppy__missing {
+  display: none;
+}
+.puppy__item img {
+  width: 100%;
+  height: 100%;
+}
+@media screen and (min-width: 960px) {
+  .puppy__missing {
+    display: block;
+    background-color: #f04d64;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .puppy__missing p {
+    font-size: 3.3rem;
+    font-weight: 600;
+    width: 200px;
+    text-align: center;
+    line-height: 1.3;
+  }
+}/*# sourceMappingURL=styles.css.map */
