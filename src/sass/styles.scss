@@ -90,9 +90,19 @@
 
 .block {
   margin: 8rem 0;
-  &--start {
-    margin: 0;
-  }
 }
 
 // block end
+// header block start
+
+.header {
+  position: sticky;
+  top: 0;
+  h1 {
+    @include standard-version() {
+      font-size: 4.5rem;
+    }
+  }
+}
+
+// header block end
