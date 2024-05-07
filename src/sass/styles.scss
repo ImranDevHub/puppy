@@ -17,7 +17,7 @@
 .grid {
   display: grid;
   gap: 5%;
-  @include standard-version() {
+  @include ipad-version() {
     &--1x3 {
       grid-template-columns: repeat(3, 1fr);
     }
@@ -31,7 +31,6 @@
 // puppy satrt
 
 .puppy {
-  margin: 5%;
   &__missing {
     display: none;
   }

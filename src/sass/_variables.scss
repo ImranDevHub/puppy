@@ -2,8 +2,14 @@ $color-primary: #085070;
 $color-secondry: #f04d64;
 $body-text: #1f1f1f;
 $standard-version: 960px;
+$ipad-version: 720px;
 @mixin standard-version() {
   @media screen and (min-width: $standard-version) {
+    @content;
+  }
+}
+@mixin ipad-version() {
+  @media screen and (min-width: $ipad-version) {
     @content;
   }
 }

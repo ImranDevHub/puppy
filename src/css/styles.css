@@ -47,7 +47,7 @@ h2 {
   display: grid;
   gap: 5%;
 }
-@media screen and (min-width: 960px) {
+@media screen and (min-width: 720px) {
   .grid--1x3 {
     grid-template-columns: repeat(3, 1fr);
   }
@@ -56,9 +56,6 @@ h2 {
   }
 }
 
-.puppy {
-  margin: 5%;
-}
 .puppy__missing {
   display: none;
 }
