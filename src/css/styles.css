@@ -60,6 +60,12 @@ h2 {
   width: 100%;
   height: 100%;
 }
+.puppy--header {
+  text-align: center;
+}
+.puppy--header h2 {
+  color: #000;
+}
 @media screen and (min-width: 720px) {
   .puppy__missing {
     display: block;

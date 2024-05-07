@@ -30,6 +30,12 @@
       height: 100%;
     }
   }
+  &--header{
+    text-align: center;
+    h2{
+        color: #000;
+    }
+  }
   @include ipad-version() {
     &__missing {
       display: block;
