@@ -1,17 +1,6 @@
 @import "./variables";
 @import "./resets";
 
-// container satrt
-
-.container {
-  @include standard-version() {
-    width: 960px;
-    margin: 0 auto;
-  }
-}
-
-// container end
-
 // Grid start
 
 .grid {
@@ -31,6 +20,7 @@
 // puppy satrt
 
 .puppy {
+  margin: 5%;
   &__missing {
     display: none;
   }
@@ -40,7 +30,7 @@
       height: 100%;
     }
   }
-  @include standard-version() {
+  @include ipad-version() {
     &__missing {
       display: block;
       background-color: $color-secondry;
@@ -93,6 +83,16 @@
 }
 
 // block end
+// container satrt
+
+.container {
+  @include standard-version() {
+    width: 960px;
+    margin: 0 auto;
+  }
+}
+
+// container end
 // header block start
 
 .header {
