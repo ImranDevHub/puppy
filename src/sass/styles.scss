@@ -86,3 +86,13 @@
 }
 
 //  frame end
+// block satrt
+
+.block {
+  margin: 8rem 0;
+  &--start {
+    margin: 0;
+  }
+}
+
+// block end
